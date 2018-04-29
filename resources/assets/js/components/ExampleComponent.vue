@@ -1,23 +1,20 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card card-default">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div>{{success()}}</div>
 </template>
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data: function(){
+            return{
+                    success: function() {
+                    this.$toast.open({
+                        duration: 8000,
+                        message: 'Password reset link sent to your E-mail',
+                        type: 'is-success'
+                    })
+                }
+            }
+           
         }
     }
 </script>

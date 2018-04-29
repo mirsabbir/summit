@@ -2,13 +2,36 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
+
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+
+
 // Variables
 @import "variables";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// overrides
+@import "overrides";
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+
+// styles
+@import "styles";
+
+
+// helpers
+@import "helpers";
+
+// Bulma
+@import '~bulma/bulma';
+
+
+// font-awesome
+@import '~font-awesome/scss/font-awesome';
+
+// buefy css
+@import '~buefy/src/scss/buefy';
+
+
+

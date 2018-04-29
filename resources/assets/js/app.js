@@ -9,6 +9,23 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+
+/*  Buefy  */
+
+import Vue from 'vue';
+import Buefy from 'buefy';
+import VueRouter from 'vue-router';
+//import 'buefy/lib/buefy.css';
+
+
+Vue.use(Buefy);
+Vue.use(VueRouter);
+
+
+
+
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -16,7 +33,20 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('Reset', require('./components/Reset.vue'));
+Vue.component('Saved', require('./components/Saved.vue'));
+
+
+
+
+var comment = require('./components/Comment.vue');
+
+
+
+
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    components: {comment},
+    
 });
